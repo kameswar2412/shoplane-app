@@ -1,0 +1,388 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#topbar{
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+
+#left-side-top{
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+#logo{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+}
+#logo a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 800;
+
+}
+#logo span{
+    font-weight: 400;
+
+}
+
+#clothing{
+    text-transform: uppercase; 
+       text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    font-weight: 600;
+}
+
+#accessories{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    font-weight: 600;
+}
+
+#middle-side-top{
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+#middle-side-top i{
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+
+#search-box{
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+
+
+
+#right-side-top{
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#cart-wrapper{
+    position: relative;
+    margin-right: 32px;
+}
+#cart-count{
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+#cart-wrapper a{
+    text-decoration: none;
+    color:black;
+}
+#cart-wrapper i{
+    font-size: 18px;
+    cursor: pointer;
+}
+#right-side-top img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#menu-btn{
+    display: none;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+#menu-btn div{
+        width: 25px;
+        height: 3px;
+        background-color: rgb(27, 25, 25);
+        margin: 5px;
+        transition: all 0.3s ease;
+}
+
+.toggle #line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle #line2 {
+    opacity: 0;
+  }
+  .toggle #line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  
+
+  .nav-active {
+    transform: translateX(0%);
+    
+  }
+
+
+
+main{
+    width: 100%;
+    min-height: 80vh;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding-bottom: 8%;
+}
+
+/* still slier section is pending */
+
+
+/* same styles for clothing & accessroy */
+.product-section{
+    padding: 4% 8% 0;
+}
+.section-heading{
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+.product-container{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+/* end for same styles */
+
+/* #clothing-container{
+
+} */
+/* end of clothing section */
+
+/* #accessory-container{
+
+} */
+/* end of accessroy section  */
+
+.product-card{
+    width: 100%;
+    max-width: 19%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+}
+.img-container{
+    text-decoration: none;
+    color: black;
+}
+.img-container img{
+    width: 100%;
+}
+.product-text{
+    box-sizing: border-box;
+    padding: 16px;
+}
+.product-text h4{
+    font-weight: 600;
+    margin: 0;
+    font-size: 16px;
+}
+.product-text h5{
+    font-weight: 600;
+    opacity: 0.8;
+    margin: 0;
+    margin-top: 12px;
+}
+.product-text p{
+    margin: 0;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #009688;
+}
+#project-logo{
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4% 8%;
+}
+
+footer > div {
+    padding-left: 60px;
+    padding-right: 60px;
+    box-sizing: border-box;
+
+}
+.footer-heading{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+
+}
+
+.footer-link{
+    box-sizing: border-box;
+
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+    #topbar{
+    padding: 4% 0px;
+
+    }
+
+    #logo{
+        font-size: 26px;
+        font-weight: 400;
+        margin-right: 0;
+    }
+
+
+
+#menu-btn{
+    display: block;
+}
+
+#clothing{
+    display: none;
+    position: absolute;
+    top: 80px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    background: #009688;
+    z-index: 100;
+padding-left: 20px;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+#accessories{
+    display: none;
+    position: absolute;
+    top: 150px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    background: #009688;
+    z-index: 100;
+padding-left: 20px;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+#right-side-top img{
+    width: 40px;
+height: 40px;
+}
+
+
+.section-heading{
+    font-size: 25px;
+  
+    font-weight:400;
+}
+.product-section {
+    padding: 4% 8% 0;
+}
+.product-container{
+    display: flex;
+/* flex-direction: column; */
+}
+.product-card{
+max-width: 45%;
+margin: 5px;
+}
+footer{
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    padding: 0px;
+}
+footer div{
+padding:10px;
+margin: 5px;
+}
+#project-logo {
+    width: 80px;
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+}
+
+}
+
+
+
+
+
+
+
